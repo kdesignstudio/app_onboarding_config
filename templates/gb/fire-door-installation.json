@@ -1,0 +1,720 @@
+{
+  "id": "9d85c68e-8f16-4b0c-bba5-76dd0f91b930",
+  "country": "GB",
+  "name": "Fire Door Installation",
+  "description": "Record and verify fire door installations.",
+  "version": "1.0.0",
+  "assetTypes": [
+    {
+      "id": "single-fire-door",
+      "name": "Single Fire Door",
+      "description": "Single leaf fire door.",
+      "iconName": "Door Open",
+      "questions": [
+        {
+          "id": "installation-manual",
+          "label": "Installation Manual",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "fieldOrder": 1
+        },
+        {
+          "id": "certification",
+          "label": "Certification",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "fieldOrder": 2
+        },
+        {
+          "id": "manufacturer",
+          "label": "Manufacturer",
+          "fieldTypeName": "Short Text",
+          "isRequired": false,
+          "fieldOrder": 3
+        },
+        {
+          "id": "product-reference",
+          "label": "Product or Doorset Reference",
+          "fieldTypeName": "Short Text",
+          "isRequired": false,
+          "fieldOrder": 4
+        },
+        {
+          "id": "fire-resistance-rating",
+          "label": "Fire Resistance Rating",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "options": [
+            "FD30",
+            "FD30S",
+            "FD60",
+            "FD60S",
+            "FD90",
+            "FD90S",
+            "FD120",
+            "FD120S",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 5
+        },
+        {
+          "id": "door-leaf-height",
+          "label": "Door Leaf Height (mm)",
+          "fieldTypeName": "Number",
+          "isRequired": false,
+          "fieldOrder": 6
+        },
+        {
+          "id": "door-leaf-width",
+          "label": "Door Leaf Width (mm)",
+          "fieldTypeName": "Number",
+          "isRequired": false,
+          "fieldOrder": 7
+        },
+        {
+          "id": "door-handing",
+          "label": "Door Handing",
+          "fieldTypeName": "Dropdown",
+          "isRequired": false,
+          "options": [
+            "Left Hand",
+            "Right Hand",
+            "Unknown"
+          ],
+          "fieldOrder": 8
+        },
+        {
+          "id": "glazing-present",
+          "label": "Glazing Present",
+          "fieldTypeName": "Yes/No",
+          "isRequired": true,
+          "fieldOrder": 9
+        },
+        {
+          "id": "intumescent-seals",
+          "label": "Intumescent Seals",
+          "fieldTypeName": "Dropdown",
+          "isRequired": false,
+          "options": [
+            "Fitted",
+            "Not Fitted",
+            "Unknown"
+          ],
+          "fieldOrder": 10
+        },
+        {
+          "id": "smoke-seals",
+          "label": "Smoke Seals",
+          "fieldTypeName": "Dropdown",
+          "isRequired": false,
+          "options": [
+            "Fitted",
+            "Not Fitted",
+            "Unknown"
+          ],
+          "fieldOrder": 11
+        },
+        {
+          "id": "self-closing-device",
+          "label": "Self-closing Device Type",
+          "fieldTypeName": "Dropdown",
+          "isRequired": false,
+          "options": [
+            "Overhead Closer",
+            "Concealed Closer",
+            "Floor Spring",
+            "Other",
+            "Not Fitted",
+            "Unknown"
+          ],
+          "fieldOrder": 12
+        }
+      ]
+    }
+  ],
+  "survey": {
+    "id": "fire-door-installation",
+    "name": "Fire Door Installation",
+    "description": "Record and verify the installation of a fire door.",
+    "tag": "Installation",
+    "sections": [
+      {
+        "id": "documentation-specification",
+        "title": "Documentation and Specification",
+        "sectionOrder": 1,
+        "questions": [
+          {
+            "id": "installation-manual-reviewed",
+            "label": "Installation manual reviewed before installation",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "specification-confirmed",
+            "label": "Fire door specification confirmed before installation",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "components-match-system",
+            "label": "Door leaf, frame and components match the specified fire door system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "certification-checked",
+            "label": "Product identification and certification checked",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "opening-supporting-construction",
+        "title": "Opening and Supporting Construction",
+        "sectionOrder": 2,
+        "questions": [
+          {
+            "id": "supporting-construction-suitable",
+            "label": "Supporting construction is suitable for the specified fire door system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "opening-dimensions-suitable",
+            "label": "Opening dimensions are suitable for the door and frame",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "opening-condition-suitable",
+            "label": "Opening and surrounding construction are free from defects that could affect the installation",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "door-frame",
+        "title": "Door Frame",
+        "sectionOrder": 3,
+        "questions": [
+          {
+            "id": "correct-frame",
+            "label": "Correct frame installed for the specified fire door system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "frame-plumb-square",
+            "label": "Frame installed plumb, square and securely fixed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "frame-fixings",
+            "label": "Frame fixings comply with the installation instructions",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "frame-wall-gap",
+            "label": "Frame to wall gap complies with the specified fire stopping system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "fire-stopping",
+        "title": "Fire Stopping",
+        "sectionOrder": 4,
+        "questions": [
+          {
+            "id": "correct-fire-stopping",
+            "label": "Correct fire stopping system used around the frame",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "fire-stopping-installed-correctly",
+            "label": "Fire stopping installed in accordance with the specified system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "fire-stopping-evidence",
+            "label": "Fire stopping recorded before being concealed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "door-leaf",
+        "title": "Door Leaf",
+        "sectionOrder": 5,
+        "questions": [
+          {
+            "id": "correct-door-leaf",
+            "label": "Correct door leaf installed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "door-leaf-identification",
+            "label": "Door leaf identification or certification marking verified",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "door-leaf-damage",
+            "label": "Door leaf is free from damage",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "door-leaf-alterations",
+            "label": "Door leaf has not been altered outside the permitted specification",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "door-gaps",
+        "title": "Door Gaps",
+        "sectionOrder": 6,
+        "questions": [
+          {
+            "id": "leaf-frame-gaps",
+            "label": "Door leaf to frame gaps comply with the installation instructions",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "threshold-gap",
+            "label": "Threshold gap complies with the installation instructions",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          }
+        ]
+      },
+      {
+        "id": "hinges",
+        "title": "Hinges",
+        "sectionOrder": 7,
+        "questions": [
+          {
+            "id": "correct-hinges",
+            "label": "Correct number and type of hinges installed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "hinge-position",
+            "label": "Hinges positioned in accordance with the installation instructions",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "hinge-fixings",
+            "label": "Hinges securely fixed using the specified fixings",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "hinge-intumescent-protection",
+            "label": "Required intumescent protection fitted to hinges",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "seals",
+        "title": "Intumescent and Smoke Seals",
+        "sectionOrder": 8,
+        "questions": [
+          {
+            "id": "correct-intumescent-seals",
+            "label": "Correct intumescent seals installed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "intumescent-seal-position",
+            "label": "Intumescent seals are correctly positioned and continuous",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "smoke-seals-installed",
+            "label": "Required smoke seals installed",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 3
+          },
+          {
+            "id": "seals-condition",
+            "label": "Seals are correctly fitted and free from damage",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "ironmongery",
+        "title": "Lock, Latch and Ironmongery",
+        "sectionOrder": 9,
+        "questions": [
+          {
+            "id": "lock-latch-suitable",
+            "label": "Lock or latch is suitable for the specified fire door system",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 1
+          },
+          {
+            "id": "lock-latch-operation",
+            "label": "Lock or latch is securely fitted and operates correctly",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 2
+          },
+          {
+            "id": "ironmongery-intumescent-protection",
+            "label": "Required intumescent protection fitted to ironmongery",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 3
+          },
+          {
+            "id": "ironmongery-compatible",
+            "label": "Other fitted ironmongery is compatible with the specified fire door system",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "self-closing-device",
+        "title": "Self-closing Device",
+        "sectionOrder": 10,
+        "questions": [
+          {
+            "id": "correct-self-closer",
+            "label": "Correct self-closing device installed",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "self-closer-secure",
+            "label": "Self-closing device securely fitted",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "self-closer-operation",
+            "label": "Door closes fully into the frame under the action of the self-closing device",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "door-latches",
+            "label": "Door latches correctly when closed",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "glazing",
+        "title": "Glazing",
+        "sectionOrder": 11,
+        "questions": [
+          {
+            "id": "glazing-compliant",
+            "label": "Glazing complies with the specified fire door system",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 1
+          },
+          {
+            "id": "glazing-system",
+            "label": "Specified glazing system and materials used",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 2
+          },
+          {
+            "id": "glazing-beads",
+            "label": "Glazing beads and fixings installed correctly",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 3
+          },
+          {
+            "id": "glazing-condition",
+            "label": "Glazing and associated seals are free from damage",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "hardware-signage",
+        "title": "Additional Hardware and Signage",
+        "sectionOrder": 12,
+        "questions": [
+          {
+            "id": "additional-hardware",
+            "label": "Additional hardware is compatible with the specified fire door system",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 1
+          },
+          {
+            "id": "fire-door-signage",
+            "label": "Required fire door signage installed",
+            "fieldTypeName": "Single Choice",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "options": [
+              "Yes",
+              "No",
+              "Not Applicable"
+            ],
+            "fieldOrder": 2
+          }
+        ]
+      },
+      {
+        "id": "final-check",
+        "title": "Final Operational Check",
+        "sectionOrder": 13,
+        "questions": [
+          {
+            "id": "door-opens-freely",
+            "label": "Door opens freely without binding or obstruction",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "door-closes-fully",
+            "label": "Door closes fully from the open position",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "door-closes-15-degrees",
+            "label": "Door closes fully from approximately 15 degrees",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "hardware-operates",
+            "label": "All fitted hardware operates correctly",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "installation-evidence",
+        "title": "Installation Evidence",
+        "sectionOrder": 14,
+        "questions": [
+          {
+            "id": "installation-photographs",
+            "label": "Installation Photographs",
+            "fieldTypeName": "Advanced File Upload",
+            "isRequired": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "additional-documents",
+            "label": "Additional Installation Documents",
+            "fieldTypeName": "Advanced File Upload",
+            "isRequired": false,
+            "fieldOrder": 2
+          },
+          {
+            "id": "installation-notes",
+            "label": "Installation Notes",
+            "fieldTypeName": "Long Text",
+            "isRequired": false,
+            "fieldOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "installation-declaration",
+        "title": "Installation Declaration",
+        "sectionOrder": 15,
+        "questions": [
+          {
+            "id": "installer-name",
+            "label": "Installer Name",
+            "fieldTypeName": "Short Text",
+            "isRequired": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "installer-company",
+            "label": "Installer Company",
+            "fieldTypeName": "Short Text",
+            "isRequired": false,
+            "fieldOrder": 2
+          },
+          {
+            "id": "installation-declaration",
+            "label": "Installation completed in accordance with the specified fire door system and installation instructions",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          }
+        ]
+      }
+    ]
+  }
+}
