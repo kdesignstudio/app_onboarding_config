@@ -119,7 +119,7 @@
         {
           "id": "hinge-finish",
           "label": "Hinge Finish",
-          "fieldTypeName": "Dropdown",
+          "fieldTypeName": "Single Choice",
           "isRequired": true,
           "includeFileUpload": true,
           "options": [
@@ -530,391 +530,818 @@
       ]
     }
   ],
-  "survey": {
-    "id": "fire-door-installation",
-    "name": "Fire Door Installation",
-    "description": "Record and verify fire door installations.",
-    "sections": [
-      {
-        "id": "opening-supporting-construction",
-        "title": "Opening and Supporting Construction",
-        "sectionOrder": 1,
-        "questions": [
-          {
-            "id": "opening-supporting-construction-suitable",
-            "label": "Is the opening and supporting construction suitable for the specified fire door system?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          }
-        ]
-      },
-      {
-        "id": "door-frame-installation",
-        "title": "Door Frame Installation",
-        "sectionOrder": 2,
-        "questions": [
-          {
-            "id": "frame-certification-verified",
-            "label": "Has the frame certification been checked and verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "correct-frame-installed",
-            "label": "Is the correct frame installed for the specified fire door system?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "frame-plumb-square",
-            "label": "Is the frame installed plumb and square?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "frame-securely-fixed",
-            "label": "Is the frame securely fixed using the specified packers, fixings and fixing centres?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          },
-          {
-            "id": "frame-wall-gap-suitable",
-            "label": "Is the frame-to-wall gap suitable for the specified fire stopping system?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 5
-          },
-          {
-            "id": "fire-stopping-installed",
-            "label": "Has the specified fire stopping system been installed around the frame?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 6
-          },
-          {
-            "id": "architraves-fitted",
-            "label": "Are the architraves fitted where required?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 7
-          }
-        ]
-      },
-      {
-        "id": "door-leaf-installation",
-        "title": "Door Leaf Installation",
-        "sectionOrder": 3,
-        "questions": [
-          {
-            "id": "door-leaf-certification-verified",
-            "label": "Has the door leaf certification been checked and verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "door-leaf-rating-match",
-            "label": "Does the door leaf match the specified fire resistance rating?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "door-leaf-undamaged",
-            "label": "Is the door leaf free from damage after installation?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "door-leaf-installed-to-instructions",
-            "label": "Has the door leaf been installed in accordance with the manufacturer's installation instructions?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          }
-        ]
-      },
-      {
-        "id": "door-gaps",
-        "title": "Door Gaps",
-        "sectionOrder": 4,
-        "questions": [
-          {
-            "id": "head-gap",
-            "label": "Head Gap (mm)",
-            "fieldTypeName": "Number",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "hinge-side-gap",
-            "label": "Hinge-side Gap (mm)",
-            "fieldTypeName": "Number",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "lock-side-gap",
-            "label": "Lock-side Gap (mm)",
-            "fieldTypeName": "Number",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "threshold-gap",
-            "label": "Threshold Gap (mm)",
-            "fieldTypeName": "Number",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          }
-        ]
-      },
-      {
-        "id": "hinges",
-        "title": "Hinges",
-        "sectionOrder": 5,
-        "questions": [
-          {
-            "id": "correct-hinges-fitted",
-            "label": "Are the correct number and type of fire-rated hinges fitted for the specified fire door system?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "hinges-ce-ukca-verified",
-            "label": "Has the required CE / UKCA marking been verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "hinge-intumescent-protection",
-            "label": "Has the required intumescent protection been fitted to the hinges?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "hinges-securely-fixed",
-            "label": "Are the hinges securely fixed using the specified fixings?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          }
-        ]
-      },
-      {
-        "id": "intumescent-smoke-seals",
-        "title": "Intumescent and Smoke Seals",
-        "sectionOrder": 6,
-        "questions": [
-          {
-            "id": "specified-seals-installed",
-            "label": "Have the specified intumescent and smoke seals been installed?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "seals-correctly-fitted",
-            "label": "Are the seals continuous, correctly fitted and free from damage?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          }
-        ]
-      },
-      {
-        "id": "latch-lock",
-        "title": "Latch / Lock",
-        "sectionOrder": 7,
-        "questions": [
-          {
-            "id": "latch-lock-fitted-certified",
-            "label": "Is the specified fire-rated latch / lock fitted, with the required CE / UKCA marking verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "latch-lock-intumescent-protection",
-            "label": "Has the required intumescent protection been fitted to the latch / lock?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "latch-lock-operation",
-            "label": "Does the latch / lock operate correctly?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          }
-        ]
-      },
-      {
-        "id": "handles",
-        "title": "Handles",
-        "sectionOrder": 8,
-        "questions": [
-          {
-            "id": "handles-fitted-certified",
-            "label": "Are the specified fire-rated handles securely fitted, with the required CE / UKCA marking verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "handles-operation",
-            "label": "Do the handles operate correctly?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          }
-        ]
-      },
-      {
-        "id": "door-closer",
-        "title": "Door Closer",
-        "sectionOrder": 9,
-        "questions": [
-          {
-            "id": "self-closing-device-fitted-certified",
-            "label": "Is the specified fire-rated self-closing device securely fitted, with the required CE / UKCA marking verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "self-closing-device-adjusted",
-            "label": "Has the self-closing device been correctly adjusted?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "door-closes-from-test-positions",
-            "label": "Does the door close fully from all test positions?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "door-engages-latch",
-            "label": "Does the door fully engage the latch when closing, where fitted?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          }
-        ]
-      },
-      {
-        "id": "fire-door-signage",
-        "title": "Fire Door Signage",
-        "sectionOrder": 10,
-        "questions": [
-          {
-            "id": "specified-signage-installed",
-            "label": "Has the specified fire door signage been installed?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          }
-        ]
-      },
-      {
-        "id": "glazing",
-        "title": "Glazing",
-        "sectionOrder": 11,
-        "questions": [
-          {
-            "id": "specified-glazing-system-installed",
-            "label": "Has the specified fire-rated glazing system been installed?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          },
-          {
-            "id": "glazing-certification-verified",
-            "label": "Has the glazing certification been checked and verified?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 2
-          },
-          {
-            "id": "glazing-components-installed",
-            "label": "Are the glazing beads, fixings and seals installed in accordance with the specified glazing system?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 3
-          },
-          {
-            "id": "glazing-undamaged",
-            "label": "Is the glazing free from damage after installation?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 4
-          }
-        ]
-      },
-      {
-        "id": "final-operational-checks",
-        "title": "Final Operational Checks",
-        "sectionOrder": 12,
-        "questions": [
-          {
-            "id": "door-operates-freely",
-            "label": "Does the door open and close freely without binding or obstruction?",
-            "fieldTypeName": "Yes/No",
-            "isRequired": true,
-            "includeFileUpload": true,
-            "fieldOrder": 1
-          }
-        ]
-      }
-    ]
-  }
+  "surveys": [
+    {
+      "id": "single-fire-door-installation",
+      "name": "Fire Door Installation - Single Door",
+      "description": "Record and verify a single fire door installation.",
+      "assetTypeIds": [
+        "single-fire-door"
+      ],
+      "sections": [
+        {
+          "id": "opening-supporting-construction",
+          "title": "Opening and Supporting Construction",
+          "sectionOrder": 1,
+          "questions": [
+            {
+              "id": "opening-supporting-construction-suitable",
+              "label": "Is the opening and supporting construction suitable for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        },
+        {
+          "id": "door-frame-installation",
+          "title": "Door Frame Installation",
+          "sectionOrder": 2,
+          "questions": [
+            {
+              "id": "frame-certification-verified",
+              "label": "Has the frame certification been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "correct-frame-installed",
+              "label": "Is the correct frame installed for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "frame-plumb-square",
+              "label": "Is the frame installed plumb and square?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "frame-securely-fixed",
+              "label": "Is the frame securely fixed using the specified packers, fixings and fixing centres?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            },
+            {
+              "id": "frame-wall-gap-suitable",
+              "label": "Is the frame-to-wall gap suitable for the specified fire stopping system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 5
+            },
+            {
+              "id": "fire-stopping-installed",
+              "label": "Has the specified fire stopping system been installed around the frame?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 6
+            },
+            {
+              "id": "architraves-fitted",
+              "label": "Are the architraves fitted where required?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 7
+            }
+          ]
+        },
+        {
+          "id": "door-leaf-installation",
+          "title": "Door Leaf Installation",
+          "sectionOrder": 3,
+          "questions": [
+            {
+              "id": "door-leaf-certification-verified",
+              "label": "Has the door leaf certification been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "door-leaf-rating-match",
+              "label": "Does the door leaf match the specified fire resistance rating?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "door-leaf-undamaged",
+              "label": "Is the door leaf free from damage after installation?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "door-leaf-installed-to-instructions",
+              "label": "Has the door leaf been installed in accordance with the manufacturer's installation instructions?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "door-gaps",
+          "title": "Door Gaps",
+          "sectionOrder": 4,
+          "questions": [
+            {
+              "id": "head-gap",
+              "label": "Head Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "hinge-side-gap",
+              "label": "Hinge-side Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "lock-side-gap",
+              "label": "Lock-side Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "threshold-gap",
+              "label": "Threshold Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "hinges",
+          "title": "Hinges",
+          "sectionOrder": 5,
+          "questions": [
+            {
+              "id": "correct-hinges-fitted",
+              "label": "Are the correct number and type of fire-rated hinges fitted for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "hinges-ce-ukca-verified",
+              "label": "Has the required CE / UKCA marking been verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "hinge-intumescent-protection",
+              "label": "Has the required intumescent protection been fitted to the hinges?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "hinges-securely-fixed",
+              "label": "Are the hinges securely fixed using the specified fixings?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "intumescent-smoke-seals",
+          "title": "Intumescent and Smoke Seals",
+          "sectionOrder": 6,
+          "questions": [
+            {
+              "id": "specified-seals-installed",
+              "label": "Have the specified intumescent and smoke seals been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "seals-correctly-fitted",
+              "label": "Are the seals continuous, correctly fitted and free from damage?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            }
+          ]
+        },
+        {
+          "id": "latch-lock",
+          "title": "Latch / Lock",
+          "sectionOrder": 7,
+          "questions": [
+            {
+              "id": "latch-lock-fitted-certified",
+              "label": "Is the specified fire-rated latch / lock fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "latch-lock-intumescent-protection",
+              "label": "Has the required intumescent protection been fitted to the latch / lock?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "latch-lock-operation",
+              "label": "Does the latch / lock operate correctly?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "handles",
+          "title": "Handles",
+          "sectionOrder": 8,
+          "questions": [
+            {
+              "id": "handles-fitted-certified",
+              "label": "Are the specified fire-rated handles securely fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "handles-operation",
+              "label": "Do the handles operate correctly?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            }
+          ]
+        },
+        {
+          "id": "door-closer",
+          "title": "Door Closer",
+          "sectionOrder": 9,
+          "questions": [
+            {
+              "id": "self-closing-device-fitted-certified",
+              "label": "Is the specified fire-rated self-closing device securely fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "self-closing-device-adjusted",
+              "label": "Has the self-closing device been correctly adjusted?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "door-closes-from-test-positions",
+              "label": "Does the door close fully from all test positions?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "door-engages-latch",
+              "label": "Does the door fully engage the latch when closing, where fitted?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "fire-door-signage",
+          "title": "Fire Door Signage",
+          "sectionOrder": 10,
+          "questions": [
+            {
+              "id": "specified-signage-installed",
+              "label": "Has the specified fire door signage been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        },
+        {
+          "id": "glazing",
+          "title": "Glazing",
+          "sectionOrder": 11,
+          "questions": [
+            {
+              "id": "specified-glazing-system-installed",
+              "label": "Has the specified fire-rated glazing system been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "glazing-certification-verified",
+              "label": "Has the glazing certification been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "glazing-components-installed",
+              "label": "Are the glazing beads, fixings and seals installed in accordance with the specified glazing system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "glazing-undamaged",
+              "label": "Is the glazing free from damage after installation?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "final-operational-checks",
+          "title": "Final Operational Checks",
+          "sectionOrder": 12,
+          "questions": [
+            {
+              "id": "door-operates-freely",
+              "label": "Does the door open and close freely without binding or obstruction?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-fire-door-installation",
+      "name": "Fire Door Installation - Double Door",
+      "description": "Record and verify a double fire door installation.",
+      "assetTypeIds": [
+        "double-fire-door"
+      ],
+      "sections": [
+        {
+          "id": "opening-supporting-construction",
+          "title": "Opening and Supporting Construction",
+          "sectionOrder": 1,
+          "questions": [
+            {
+              "id": "opening-supporting-construction-suitable",
+              "label": "Is the opening and supporting construction suitable for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        },
+        {
+          "id": "door-frame-installation",
+          "title": "Door Frame Installation",
+          "sectionOrder": 2,
+          "questions": [
+            {
+              "id": "frame-certification-verified",
+              "label": "Has the frame certification been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "correct-frame-installed",
+              "label": "Is the correct frame installed for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "frame-plumb-square",
+              "label": "Is the frame installed plumb and square?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "frame-securely-fixed",
+              "label": "Is the frame securely fixed using the specified packers, fixings and fixing centres?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            },
+            {
+              "id": "frame-wall-gap-suitable",
+              "label": "Is the frame-to-wall gap suitable for the specified fire stopping system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 5
+            },
+            {
+              "id": "fire-stopping-installed",
+              "label": "Has the specified fire stopping system been installed around the frame?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 6
+            },
+            {
+              "id": "architraves-fitted",
+              "label": "Are the architraves fitted where required?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 7
+            }
+          ]
+        },
+        {
+          "id": "door-leaf-installation",
+          "title": "Door Leaf Installation",
+          "sectionOrder": 3,
+          "questions": [
+            {
+              "id": "door-leaf-certification-verified",
+              "label": "Have the certifications for both door leaves been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "door-leaf-rating-match",
+              "label": "Do both door leaves match the specified fire resistance rating?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "door-leaf-undamaged",
+              "label": "Are both door leaves free from damage after installation?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "door-leaf-installed-to-instructions",
+              "label": "Have both door leaves been installed in accordance with the manufacturer's installation instructions?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "door-gaps",
+          "title": "Door Gaps",
+          "sectionOrder": 4,
+          "questions": [
+            {
+              "id": "left-leaf-head-gap",
+              "label": "Left Leaf Head Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "left-leaf-hinge-side-gap",
+              "label": "Left Leaf Hinge-side Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "right-leaf-head-gap",
+              "label": "Right Leaf Head Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "right-leaf-hinge-side-gap",
+              "label": "Right Leaf Hinge-side Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            },
+            {
+              "id": "meeting-stile-gap",
+              "label": "Meeting Stile Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 5
+            },
+            {
+              "id": "left-leaf-threshold-gap",
+              "label": "Left Leaf Threshold Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 6
+            },
+            {
+              "id": "right-leaf-threshold-gap",
+              "label": "Right Leaf Threshold Gap (mm)",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 7
+            }
+          ]
+        },
+        {
+          "id": "hinges",
+          "title": "Hinges",
+          "sectionOrder": 5,
+          "questions": [
+            {
+              "id": "correct-hinges-fitted",
+              "label": "Are the correct number and type of fire-rated hinges fitted to both door leaves for the specified fire door system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "hinges-ce-ukca-verified",
+              "label": "Has the required CE / UKCA marking been verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "hinge-intumescent-protection",
+              "label": "Has the required intumescent protection been fitted to the hinges?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "hinges-securely-fixed",
+              "label": "Are the hinges securely fixed using the specified fixings?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "intumescent-smoke-seals",
+          "title": "Intumescent and Smoke Seals",
+          "sectionOrder": 6,
+          "questions": [
+            {
+              "id": "specified-seals-installed",
+              "label": "Have the specified intumescent and smoke seals been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "seals-correctly-fitted",
+              "label": "Are the seals continuous, correctly fitted and free from damage?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            }
+          ]
+        },
+        {
+          "id": "latch-lock",
+          "title": "Latch / Lock",
+          "sectionOrder": 7,
+          "questions": [
+            {
+              "id": "latch-lock-fitted-certified",
+              "label": "Is the specified fire-rated latch / lock fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "latch-lock-intumescent-protection",
+              "label": "Has the required intumescent protection been fitted to the latch / lock?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "latch-lock-operation",
+              "label": "Does the latch / lock operate correctly?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "handles",
+          "title": "Handles",
+          "sectionOrder": 8,
+          "questions": [
+            {
+              "id": "handles-fitted-certified",
+              "label": "Are the specified fire-rated handles securely fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "handles-operation",
+              "label": "Do the handles operate correctly?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            }
+          ]
+        },
+        {
+          "id": "door-closer",
+          "title": "Door Closer",
+          "sectionOrder": 9,
+          "questions": [
+            {
+              "id": "self-closing-device-fitted-certified",
+              "label": "Are the specified fire-rated self-closing devices securely fitted, with the required CE / UKCA marking verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "self-closing-device-adjusted",
+              "label": "Have the self-closing devices been correctly adjusted?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "door-closes-from-test-positions",
+              "label": "Do both door leaves close fully from all test positions?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "door-engages-latch",
+              "label": "Do both door leaves fully engage the latch or closing position when closing, where fitted?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            },
+            {
+              "id": "closing-sequence-correct",
+              "label": "Do the door leaves close in the correct sequence, where required?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 5
+            }
+          ]
+        },
+        {
+          "id": "fire-door-signage",
+          "title": "Fire Door Signage",
+          "sectionOrder": 10,
+          "questions": [
+            {
+              "id": "specified-signage-installed",
+              "label": "Has the specified fire door signage been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        },
+        {
+          "id": "glazing",
+          "title": "Glazing",
+          "sectionOrder": 11,
+          "questions": [
+            {
+              "id": "specified-glazing-system-installed",
+              "label": "Has the specified fire-rated glazing system been installed?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            },
+            {
+              "id": "glazing-certification-verified",
+              "label": "Has the glazing certification been checked and verified?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 2
+            },
+            {
+              "id": "glazing-components-installed",
+              "label": "Are the glazing beads, fixings and seals installed in accordance with the specified glazing system?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 3
+            },
+            {
+              "id": "glazing-undamaged",
+              "label": "Is the glazing free from damage after installation?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 4
+            }
+          ]
+        },
+        {
+          "id": "final-operational-checks",
+          "title": "Final Operational Checks",
+          "sectionOrder": 12,
+          "questions": [
+            {
+              "id": "door-operates-freely",
+              "label": "Do both door leaves open and close freely without binding or obstruction?",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "fieldOrder": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

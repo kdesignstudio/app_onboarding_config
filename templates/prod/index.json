@@ -1,23 +1,23 @@
 [
-    {
-      "id": "9d85c68e-8f16-4b0c-bba5-76dd0f91b930",
-      "country": "GB",
-      "name": "Fire Door Installation",
-      "description": "Record and verify new installations",
-      "version": "1.0.0"
-    },
-    {
-      "id": "4e2f8d4a-2d62-4e4b-9f5d-0f4d5f1a9c21",
-      "country": "GB",
-      "name": "Fire Door Inspection",
-      "description": "Inspect condition and compliance",
-      "version": "1.0.0"
-    },
-    {
-      "id": "b7c6d9f1-8f84-4e2f-9f31-2a6f3d5c7b42",
-      "country": "GB",
-      "name": "Fire Door Remedial Works",
-      "description": "Record corrective work completed",
-      "version": "1.0.0"
-    }
-  ]
+  {
+    "id": "9d85c68e-8f16-4b0c-bba5-76dd0f91b930",
+    "country": "GB",
+    "name": "Fire Door Installation",
+    "description": "Record and verify fire door installations.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "4e2f8d4a-2d62-4e4b-9f5d-0f4d5f1a9c21",
+    "country": "GB",
+    "name": "Fire Door Inspection",
+    "description": "Inspect fire door condition and performance.",
+    "version": "1.0.0"
+  },
+  {
+    "id": "b7c6d9f1-8f84-4e2f-9f31-2a6f3d5c7b42",
+    "country": "GB",
+    "name": "Fire Door Remedial Works",
+    "description": "Record corrective work completed on fire doors.",
+    "version": "1.0.0"
+  }
+]
