@@ -533,7 +533,7 @@
   "surveys": [
     {
       "id": "single-fire-door-installation",
-      "name": "Fire Door Installation - Single Door",
+      "name": "Single Fire Door Installation",
       "description": "Record and verify a single fire door installation.",
       "assetTypeIds": [
         "single-fire-door"
@@ -923,7 +923,7 @@
     },
     {
       "id": "double-fire-door-installation",
-      "name": "Fire Door Installation - Double Door",
+      "name": "Double Fire Door Installation",
       "description": "Record and verify a double fire door installation.",
       "assetTypeIds": [
         "double-fire-door"
