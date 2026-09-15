@@ -119,7 +119,7 @@
         {
           "id": "hinge-finish",
           "label": "Hinge Finish",
-          "fieldTypeName": "Single Choice",
+          "fieldTypeName": "Dropdown",
           "isRequired": true,
           "includeFileUpload": true,
           "options": [
