@@ -1,0 +1,920 @@
+{
+  "id": "9d85c68e-8f16-4b0c-bba5-76dd0f91b930",
+  "country": "GB",
+  "name": "Fire Door Installation",
+  "description": "Record and verify fire door installations.",
+  "version": "1.0.0",
+  "assetTypes": [
+    {
+      "id": "single-fire-door",
+      "name": "Single Fire Door",
+      "description": "Single leaf fire door.",
+      "iconName": "Door Open",
+      "questions": [
+        {
+          "id": "installation-manual",
+          "label": "Installation Manual",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "fieldOrder": 1
+        },
+        {
+          "id": "certification",
+          "label": "Certification",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "fieldOrder": 2
+        },
+        {
+          "id": "fire-resistance-rating",
+          "label": "Fire Resistance Rating",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "FD30",
+            "FD30S",
+            "FD60",
+            "FD60S",
+            "FD90",
+            "FD90S",
+            "FD120",
+            "FD120S",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 3
+        },
+        {
+          "id": "glazing",
+          "label": "Glazing",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "No Glazing",
+            "Top Vision Panel",
+            "Side Panel",
+            "Top Vision Panel and Side Panel",
+            "Other"
+          ],
+          "fieldOrder": 4
+        },
+        {
+          "id": "door-leaf-size",
+          "label": "Door Leaf Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "1981 x 305 mm",
+            "1981 x 381 mm",
+            "1981 x 457 mm",
+            "1981 x 533 mm",
+            "1981 x 610 mm",
+            "1981 x 686 mm",
+            "1981 x 711 mm",
+            "1981 x 762 mm",
+            "2032 x 813 mm",
+            "1981 x 838 mm",
+            "1981 x 864 mm",
+            "2040 x 526 mm",
+            "2040 x 626 mm",
+            "2040 x 726 mm",
+            "2040 x 826 mm",
+            "2040 x 926 mm",
+            "Other"
+          ],
+          "fieldOrder": 5
+        },
+        {
+          "id": "door-handing",
+          "label": "Door Handing",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Left Hand",
+            "Right Hand",
+            "Not Applicable"
+          ],
+          "fieldOrder": 6
+        },
+        {
+          "id": "hinge-size",
+          "label": "Hinge Size",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "3 inch",
+            "4 inch",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 7
+        },
+        {
+          "id": "hinge-finish",
+          "label": "Hinge Finish",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Satin Chrome",
+            "Polished Chrome",
+            "Satin Nickel",
+            "Brass",
+            "Black",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 8
+        },
+        {
+          "id": "latch-lock-type",
+          "label": "Latch / Lock Type",
+          "fieldTypeName": "Multi Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Tubular Latch",
+            "Escape Lock with Euro Cylinder",
+            "Mechanical Keypad Lock",
+            "Electric Door Entry",
+            "Maglock",
+            "Night Lock",
+            "Bathroom Lock with Lift Handle",
+            "No Latch / Lock",
+            "Other"
+          ],
+          "fieldOrder": 9
+        },
+        {
+          "id": "intumescent-seal-size",
+          "label": "Intumescent Seal Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "10mm",
+            "15mm",
+            "20mm",
+            "Other",
+            "None",
+            "Not Applicable"
+          ],
+          "fieldOrder": 10
+        },
+        {
+          "id": "handle-type",
+          "label": "Handle Type",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Lever Handle",
+            "Bathroom Handle with Thumbturn",
+            "Pull Handle with Push Plate",
+            "No Handle",
+            "Other"
+          ],
+          "fieldOrder": 11
+        },
+        {
+          "id": "handle-finish",
+          "label": "Handle Finish",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Satin Chrome",
+            "Polished Chrome",
+            "Satin Nickel",
+            "Brass",
+            "Black",
+            "Other",
+            "Not Applicable"
+          ],
+          "fieldOrder": 12
+        },
+        {
+          "id": "door-closer-type",
+          "label": "Door Closer Type",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Mechanical Closer",
+            "Electric Closer",
+            "Free-swing Closer",
+            "Tubular Closer",
+            "No Closer",
+            "Other",
+            "Not Applicable"
+          ],
+          "fieldOrder": 13
+        },
+        {
+          "id": "fire-door-signage",
+          "label": "Fire Door Signage",
+          "fieldTypeName": "Multi Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Fire Door Keep Clear",
+            "Fire Door Keep Shut",
+            "Automatic Fire Door Keep Clear",
+            "Other",
+            "No Signage"
+          ],
+          "fieldOrder": 14
+        },
+        {
+          "id": "drop-down-seal",
+          "label": "Drop-down Seal",
+          "fieldTypeName": "Yes/No",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "fieldOrder": 15
+        },
+        {
+          "id": "frame-intumescent-seal-groove-size",
+          "label": "Frame Intumescent Seal Groove Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "10mm",
+            "12mm",
+            "15mm",
+            "20mm",
+            "No Groove",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 16
+        }
+      ]
+    },
+    {
+      "id": "double-fire-door",
+      "name": "Double Fire Door",
+      "description": "Double leaf fire door.",
+      "iconName": "Double Door Closed",
+      "questions": [
+        {
+          "id": "installation-manual",
+          "label": "Installation Manual",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "fieldOrder": 1
+        },
+        {
+          "id": "certification",
+          "label": "Certification",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "fieldOrder": 2
+        },
+        {
+          "id": "fire-resistance-rating",
+          "label": "Fire Resistance Rating",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "FD30",
+            "FD30S",
+            "FD60",
+            "FD60S",
+            "FD90",
+            "FD90S",
+            "FD120",
+            "FD120S",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 3
+        },
+        {
+          "id": "glazing",
+          "label": "Glazing",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "No Glazing",
+            "Top Vision Panels",
+            "Side Panels",
+            "Top Vision Panels and Side Panels",
+            "Full-height Glazing",
+            "Other"
+          ],
+          "fieldOrder": 4
+        },
+        {
+          "id": "left-leaf-size",
+          "label": "Left Leaf Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "1981 x 305 mm",
+            "1981 x 381 mm",
+            "1981 x 457 mm",
+            "1981 x 533 mm",
+            "1981 x 610 mm",
+            "1981 x 686 mm",
+            "1981 x 711 mm",
+            "1981 x 762 mm",
+            "2032 x 813 mm",
+            "1981 x 838 mm",
+            "1981 x 864 mm",
+            "2040 x 526 mm",
+            "2040 x 626 mm",
+            "2040 x 726 mm",
+            "2040 x 826 mm",
+            "2040 x 926 mm",
+            "Other"
+          ],
+          "fieldOrder": 5
+        },
+        {
+          "id": "right-leaf-size",
+          "label": "Right Leaf Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "1981 x 305 mm",
+            "1981 x 381 mm",
+            "1981 x 457 mm",
+            "1981 x 533 mm",
+            "1981 x 610 mm",
+            "1981 x 686 mm",
+            "1981 x 711 mm",
+            "1981 x 762 mm",
+            "2032 x 813 mm",
+            "1981 x 838 mm",
+            "1981 x 864 mm",
+            "2040 x 526 mm",
+            "2040 x 626 mm",
+            "2040 x 726 mm",
+            "2040 x 826 mm",
+            "2040 x 926 mm",
+            "Other"
+          ],
+          "fieldOrder": 6
+        },
+        {
+          "id": "hinge-size",
+          "label": "Hinge Size",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "3 inch",
+            "4 inch",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 7
+        },
+        {
+          "id": "hinge-finish",
+          "label": "Hinge Finish",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Satin Chrome",
+            "Polished Chrome",
+            "Satin Nickel",
+            "Brass",
+            "Black",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 8
+        },
+        {
+          "id": "latch-lock-type",
+          "label": "Latch / Lock Type",
+          "fieldTypeName": "Multi Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Tubular Latch",
+            "Escape Lock with Euro Cylinder",
+            "Mechanical Keypad Lock",
+            "Electric Door Entry",
+            "Maglock",
+            "Night Lock",
+            "No Latch / Lock",
+            "Other"
+          ],
+          "fieldOrder": 9
+        },
+        {
+          "id": "handle-type",
+          "label": "Handle Type",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Lever Handle",
+            "Pull Handle 200mm with Push Plate",
+            "Pull Handle 250mm with Push Plate",
+            "Pull Handle 300mm with Push Plate",
+            "Pull Handle with Push Plate - Other Size",
+            "No Handle",
+            "Other"
+          ],
+          "fieldOrder": 10
+        },
+        {
+          "id": "handle-finish",
+          "label": "Handle Finish",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Satin Chrome",
+            "Polished Chrome",
+            "Satin Nickel",
+            "Brass",
+            "Black",
+            "Other",
+            "Not Applicable"
+          ],
+          "fieldOrder": 11
+        },
+        {
+          "id": "intumescent-seal-size",
+          "label": "Intumescent Seal Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "10mm",
+            "15mm",
+            "20mm",
+            "Other",
+            "None",
+            "Not Applicable"
+          ],
+          "fieldOrder": 12
+        },
+        {
+          "id": "door-closer-type",
+          "label": "Door Closer Type",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Mechanical Closer",
+            "Electric Closer",
+            "Free-swing Closer",
+            "Tubular Closer",
+            "No Closer",
+            "Other",
+            "Not Applicable"
+          ],
+          "fieldOrder": 13
+        },
+        {
+          "id": "fire-door-signage",
+          "label": "Fire Door Signage",
+          "fieldTypeName": "Multi Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "Fire Door Keep Clear",
+            "Fire Door Keep Shut",
+            "Automatic Fire Door Keep Clear",
+            "Other",
+            "No Signage"
+          ],
+          "fieldOrder": 14
+        },
+        {
+          "id": "drop-down-seal",
+          "label": "Drop-down Seal",
+          "fieldTypeName": "Yes/No",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "fieldOrder": 15
+        },
+        {
+          "id": "frame-intumescent-seal-groove-size",
+          "label": "Frame Intumescent Seal Groove Size",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "options": [
+            "10mm",
+            "12mm",
+            "15mm",
+            "20mm",
+            "No Groove",
+            "Other",
+            "Unknown"
+          ],
+          "fieldOrder": 16
+        }
+      ]
+    }
+  ],
+  "survey": {
+    "id": "fire-door-installation",
+    "name": "Fire Door Installation",
+    "description": "Record and verify fire door installations.",
+    "sections": [
+      {
+        "id": "opening-supporting-construction",
+        "title": "Opening and Supporting Construction",
+        "sectionOrder": 1,
+        "questions": [
+          {
+            "id": "opening-supporting-construction-suitable",
+            "label": "Is the opening and supporting construction suitable for the specified fire door system?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          }
+        ]
+      },
+      {
+        "id": "door-frame-installation",
+        "title": "Door Frame Installation",
+        "sectionOrder": 2,
+        "questions": [
+          {
+            "id": "frame-certification-verified",
+            "label": "Has the frame certification been checked and verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "correct-frame-installed",
+            "label": "Is the correct frame installed for the specified fire door system?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "frame-plumb-square",
+            "label": "Is the frame installed plumb and square?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "frame-securely-fixed",
+            "label": "Is the frame securely fixed using the specified packers, fixings and fixing centres?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          },
+          {
+            "id": "frame-wall-gap-suitable",
+            "label": "Is the frame-to-wall gap suitable for the specified fire stopping system?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 5
+          },
+          {
+            "id": "fire-stopping-installed",
+            "label": "Has the specified fire stopping system been installed around the frame?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 6
+          },
+          {
+            "id": "architraves-fitted",
+            "label": "Are the architraves fitted where required?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 7
+          }
+        ]
+      },
+      {
+        "id": "door-leaf-installation",
+        "title": "Door Leaf Installation",
+        "sectionOrder": 3,
+        "questions": [
+          {
+            "id": "door-leaf-certification-verified",
+            "label": "Has the door leaf certification been checked and verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "door-leaf-rating-match",
+            "label": "Does the door leaf match the specified fire resistance rating?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "door-leaf-undamaged",
+            "label": "Is the door leaf free from damage after installation?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "door-leaf-installed-to-instructions",
+            "label": "Has the door leaf been installed in accordance with the manufacturer's installation instructions?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "door-gaps",
+        "title": "Door Gaps",
+        "sectionOrder": 4,
+        "questions": [
+          {
+            "id": "head-gap",
+            "label": "Head Gap (mm)",
+            "fieldTypeName": "Number",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "hinge-side-gap",
+            "label": "Hinge-side Gap (mm)",
+            "fieldTypeName": "Number",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "lock-side-gap",
+            "label": "Lock-side Gap (mm)",
+            "fieldTypeName": "Number",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "threshold-gap",
+            "label": "Threshold Gap (mm)",
+            "fieldTypeName": "Number",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "hinges",
+        "title": "Hinges",
+        "sectionOrder": 5,
+        "questions": [
+          {
+            "id": "correct-hinges-fitted",
+            "label": "Are the correct number and type of fire-rated hinges fitted for the specified fire door system?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "hinges-ce-ukca-verified",
+            "label": "Has the required CE / UKCA marking been verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "hinge-intumescent-protection",
+            "label": "Has the required intumescent protection been fitted to the hinges?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "hinges-securely-fixed",
+            "label": "Are the hinges securely fixed using the specified fixings?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "intumescent-smoke-seals",
+        "title": "Intumescent and Smoke Seals",
+        "sectionOrder": 6,
+        "questions": [
+          {
+            "id": "specified-seals-installed",
+            "label": "Have the specified intumescent and smoke seals been installed?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "seals-correctly-fitted",
+            "label": "Are the seals continuous, correctly fitted and free from damage?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          }
+        ]
+      },
+      {
+        "id": "latch-lock",
+        "title": "Latch / Lock",
+        "sectionOrder": 7,
+        "questions": [
+          {
+            "id": "latch-lock-fitted-certified",
+            "label": "Is the specified fire-rated latch / lock fitted, with the required CE / UKCA marking verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "latch-lock-intumescent-protection",
+            "label": "Has the required intumescent protection been fitted to the latch / lock?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "latch-lock-operation",
+            "label": "Does the latch / lock operate correctly?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "handles",
+        "title": "Handles",
+        "sectionOrder": 8,
+        "questions": [
+          {
+            "id": "handles-fitted-certified",
+            "label": "Are the specified fire-rated handles securely fitted, with the required CE / UKCA marking verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "handles-operation",
+            "label": "Do the handles operate correctly?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          }
+        ]
+      },
+      {
+        "id": "door-closer",
+        "title": "Door Closer",
+        "sectionOrder": 9,
+        "questions": [
+          {
+            "id": "self-closing-device-fitted-certified",
+            "label": "Is the specified fire-rated self-closing device securely fitted, with the required CE / UKCA marking verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "self-closing-device-adjusted",
+            "label": "Has the self-closing device been correctly adjusted?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "door-closes-from-test-positions",
+            "label": "Does the door close fully from all test positions?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "door-engages-latch",
+            "label": "Does the door fully engage the latch when closing, where fitted?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "fire-door-signage",
+        "title": "Fire Door Signage",
+        "sectionOrder": 10,
+        "questions": [
+          {
+            "id": "specified-signage-installed",
+            "label": "Has the specified fire door signage been installed?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          }
+        ]
+      },
+      {
+        "id": "glazing",
+        "title": "Glazing",
+        "sectionOrder": 11,
+        "questions": [
+          {
+            "id": "specified-glazing-system-installed",
+            "label": "Has the specified fire-rated glazing system been installed?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          },
+          {
+            "id": "glazing-certification-verified",
+            "label": "Has the glazing certification been checked and verified?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 2
+          },
+          {
+            "id": "glazing-components-installed",
+            "label": "Are the glazing beads, fixings and seals installed in accordance with the specified glazing system?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 3
+          },
+          {
+            "id": "glazing-undamaged",
+            "label": "Is the glazing free from damage after installation?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "final-operational-checks",
+        "title": "Final Operational Checks",
+        "sectionOrder": 12,
+        "questions": [
+          {
+            "id": "door-operates-freely",
+            "label": "Does the door open and close freely without binding or obstruction?",
+            "fieldTypeName": "Yes/No",
+            "isRequired": true,
+            "includeFileUpload": true,
+            "fieldOrder": 1
+          }
+        ]
+      }
+    ]
+  }
+}
