@@ -19,5 +19,12 @@
     "name": "Coming Soon",
     "description": "Record corrective work completed on fire doors.",
     "version": "1.0.0"
+  },
+  {
+    "id": "6f6a9120-2d23-4d74-bbd8-64f8b7e88f01",
+    "country": "GB",
+    "name": "Field Type Test",
+    "description": "Test package containing all supported field types.",
+    "version": "1.0.0"
   }
 ]

@@ -1,0 +1,268 @@
+{
+  "id": "6f6a9120-2d23-4d74-bbd8-64f8b7e88f01",
+  "country": "GB",
+  "name": "Field Type Test",
+  "description": "Test package containing all supported field types.",
+  "version": "1.0.0",
+  "assetTypes": [
+    {
+      "id": "test-asset",
+      "name": "Test Asset",
+      "description": "Asset type used for testing all supported field types.",
+      "iconName": "Test Tube",
+      "questions": [
+        {
+          "id": "asset-short-text",
+          "label": "Short Text",
+          "fieldTypeName": "Short Text",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "placeholder": "Enter some short text.",
+          "helpText": "Test the Short Text field type.",
+          "fieldOrder": 1
+        },
+        {
+          "id": "asset-long-text",
+          "label": "Long Text",
+          "fieldTypeName": "Long Text",
+          "isRequired": false,
+          "includeFileUpload": true,
+          "placeholder": "Enter some longer text.",
+          "helpText": "Test the Long Text field type.",
+          "fieldOrder": 2
+        },
+        {
+          "id": "asset-number",
+          "label": "Number",
+          "fieldTypeName": "Number",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Number field type by entering a numeric value.",
+          "fieldOrder": 3
+        },
+        {
+          "id": "asset-dropdown",
+          "label": "Dropdown",
+          "fieldTypeName": "Dropdown",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Dropdown field type by selecting one option.",
+          "options": [
+            "Option 1",
+            "Option 2",
+            "Option 3",
+            "Other"
+          ],
+          "fieldOrder": 4
+        },
+        {
+          "id": "asset-single-choice",
+          "label": "Single Choice",
+          "fieldTypeName": "Single Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Single Choice field type by selecting one option.",
+          "options": [
+            "Choice A",
+            "Choice B",
+            "Choice C"
+          ],
+          "fieldOrder": 5
+        },
+        {
+          "id": "asset-multi-choice",
+          "label": "Multi Choice",
+          "fieldTypeName": "Multi Choice",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Multi Choice field type by selecting one or more options.",
+          "options": [
+            "Choice A",
+            "Choice B",
+            "Choice C",
+            "Choice D"
+          ],
+          "fieldOrder": 6
+        },
+        {
+          "id": "asset-checkbox",
+          "label": "Checkbox",
+          "fieldTypeName": "Checkbox",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Checkbox field type by selecting the checkbox.",
+          "fieldOrder": 7
+        },
+        {
+          "id": "asset-yes-no",
+          "label": "Yes / No",
+          "fieldTypeName": "Yes/No",
+          "isRequired": true,
+          "includeFileUpload": true,
+          "helpText": "Test the Yes / No field type, including the N/A option.",
+          "fieldOrder": 8
+        },
+        {
+          "id": "asset-file-upload",
+          "label": "File Upload",
+          "fieldTypeName": "File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "helpText": "Test uploading a file using the standard File Upload field.",
+          "fieldOrder": 9
+        },
+        {
+          "id": "asset-advanced-file-upload",
+          "label": "Advanced File Upload",
+          "fieldTypeName": "Advanced File Upload",
+          "isRequired": false,
+          "includeFileUpload": false,
+          "helpText": "Test uploading files using the Advanced File Upload field.",
+          "fieldOrder": 10
+        }
+      ]
+    }
+  ],
+  "surveys": [
+    {
+      "id": "test-survey",
+      "name": "Test Survey",
+      "description": "Survey used for testing all supported field types.",
+      "assetTypeIds": [
+        "test-asset"
+      ],
+      "sections": [
+        {
+          "id": "text-fields",
+          "title": "Text Fields",
+          "sectionOrder": 1,
+          "questions": [
+            {
+              "id": "survey-short-text",
+              "label": "Short Text",
+              "fieldTypeName": "Short Text",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "placeholder": "Enter some short text.",
+              "helpText": "Test the Short Text field type.",
+              "fieldOrder": 1
+            },
+            {
+              "id": "survey-long-text",
+              "label": "Long Text",
+              "fieldTypeName": "Long Text",
+              "isRequired": false,
+              "includeFileUpload": true,
+              "placeholder": "Enter some longer text.",
+              "helpText": "Test the Long Text field type.",
+              "fieldOrder": 2
+            },
+            {
+              "id": "survey-number",
+              "label": "Number",
+              "fieldTypeName": "Number",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Number field type by entering a numeric value.",
+              "fieldOrder": 3
+            }
+          ]
+        },
+        {
+          "id": "choice-fields",
+          "title": "Choice Fields",
+          "sectionOrder": 2,
+          "questions": [
+            {
+              "id": "survey-dropdown",
+              "label": "Dropdown",
+              "fieldTypeName": "Dropdown",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Dropdown field type by selecting one option.",
+              "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Other"
+              ],
+              "fieldOrder": 1
+            },
+            {
+              "id": "survey-single-choice",
+              "label": "Single Choice",
+              "fieldTypeName": "Single Choice",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Single Choice field type by selecting one option.",
+              "options": [
+                "Choice A",
+                "Choice B",
+                "Choice C"
+              ],
+              "fieldOrder": 2
+            },
+            {
+              "id": "survey-multi-choice",
+              "label": "Multi Choice",
+              "fieldTypeName": "Multi Choice",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Multi Choice field type by selecting one or more options.",
+              "options": [
+                "Choice A",
+                "Choice B",
+                "Choice C",
+                "Choice D"
+              ],
+              "fieldOrder": 3
+            },
+            {
+              "id": "survey-checkbox",
+              "label": "Checkbox",
+              "fieldTypeName": "Checkbox",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Checkbox field type by selecting the checkbox.",
+              "fieldOrder": 4
+            },
+            {
+              "id": "survey-yes-no",
+              "label": "Yes / No",
+              "fieldTypeName": "Yes/No",
+              "isRequired": true,
+              "includeFileUpload": true,
+              "helpText": "Test the Yes / No field type, including the N/A option.",
+              "fieldOrder": 5
+            }
+          ]
+        },
+        {
+          "id": "file-fields",
+          "title": "File Fields",
+          "sectionOrder": 3,
+          "questions": [
+            {
+              "id": "survey-file-upload",
+              "label": "File Upload",
+              "fieldTypeName": "File Upload",
+              "isRequired": false,
+              "includeFileUpload": false,
+              "helpText": "Test uploading a file using the standard File Upload field.",
+              "fieldOrder": 1
+            },
+            {
+              "id": "survey-advanced-file-upload",
+              "label": "Advanced File Upload",
+              "fieldTypeName": "Advanced File Upload",
+              "isRequired": false,
+              "includeFileUpload": false,
+              "helpText": "Test uploading files using the Advanced File Upload field.",
+              "fieldOrder": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
